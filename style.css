@@ -47,3 +47,13 @@ section {
 }
 
 footer { padding: 16px; text-align: center; }
+
+nav { margin-top: 16px; }
+
+nav a { margin: 0 12px; color: white; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #d5dee6; }
+
+th { color: #12395b; }
