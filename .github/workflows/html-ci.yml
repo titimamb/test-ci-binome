@@ -11,4 +11,3 @@ jobs:
 
       - name: Check the HTML
         run: npx --yes htmlhint@1.9.2 "**/*.html"
-        
