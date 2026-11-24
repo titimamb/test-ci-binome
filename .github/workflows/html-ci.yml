@@ -1,0 +1,18 @@
+name: HTML CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v7
+
+      - name: Check the HTML quality
+        run: npx --yes htmlhint@1.9.2 "**/*.html"
