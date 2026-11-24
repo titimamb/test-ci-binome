@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            width: 400px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Passer une Commande</h2>
+
+    <form>
+        <label>Nom complet</label>
+        <input type="text" placeholder="Votre nom" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="exemple@email.com" required>
+
+        <label>Produit</label>
+        <select required>
+            <option value="">Choisir un produit</option>
+            <option>T-shirt</option>
+            <option>Chaussures</option>
+            <option>Sac à dos</option>
+        </select>
+
+        <label>Quantité</label>
+        <input type="number" min="1" value="1">
+
+        <label>Adresse de livraison</label>
+        <textarea rows="4" placeholder="Votre adresse"></textarea>
+
+        <button type="submit">Commander</button>
+    </form>
+</div>
+</body>
+</html>
